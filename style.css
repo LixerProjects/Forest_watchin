@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: FreeSans, Bold; /* added font family */
+  }
+  
+  html,
+  body {
+    background-color: #101418;
+    font-family: FreeSans, Bold; /* added font family */
+  }
+  
+  .parallax {
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -1500px;
+  }
+  
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .parallax__cover {
+    background: #13112d;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+  }
+  
+  .parallax__layer__0 {
+    transform: translateZ(-300px) scale(4);
+  }
+  
+  .parallax__layer__1 {
+    transform: translateZ(-250px) scale(3.5);
+  }
+  
+  .parallax__layer__2 {
+    transform: translateZ(-200px) scale(3);
+  }
+  
+  .parallax__layer__3 {
+    transform: translateZ(-150px) scale(2.5);
+  }
+  
+  .parallax__layer__4 {
+    transform: translateZ(-100px) scale(2);
+  }
+  
+  .parallax__layer__5 {
+    transform: translateZ(-50px) scale(1.5);
+  }
+  
+  .parallax__layer__6 {
+    transform: translateZ(0px) scale(1);
+  }
+  
+  .centered-text {
+    position: absolute;
+    top: 120%;
+    left: 60.9%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* adjust the color as needed */
+    font-size: 24px; /* adjust the font size as needed */
+    font-family: FreeSans, Bold; /* added font family */
+    z-index: 3; /* make sure it's on top of the parallax layers */
+  }
